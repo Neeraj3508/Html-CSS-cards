@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding:0;
+}
+body {
+  background-color: black;
+}
+.container {
+  box-sizing: border-box;
+  background-color: purple;
+  padding:20px;
+  margin-top: 50px;
+  color:white;
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.heading {
+  text-align:center;
+  padding: 10px 0px;
+}
+.cards-container {
+  box-sizing: border-box;
+  margin:auto;
+  padding:10px;
+}
+.cards-container::after {
+content: "";
+clear: both;
+display: table;
+}
+.cards {
+  box-sizing: border-box;
+  float: right;
+  padding:10px 0px;
+  margin:1px;
+  width:33%;
+  text-align:center;
+  background-color: rgba(202, 118, 202, 0.726);
+}
+.cards>iframe {
+  display: block;
+  margin:auto;  
+}
